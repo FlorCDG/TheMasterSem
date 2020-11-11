@@ -117,10 +117,6 @@ a:hover {
   padding-top: 20vh; 
 }
 
-.media__div__img-size {
-  opacity: 70%; 
-}
-
 .textobienvenida {
   font-size: 2rem;
   color:#1D3461;
@@ -133,7 +129,6 @@ a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 80%;
-  height: 60%;
   padding: 1rem 2rem 1rem 2rem;
   background-color: #BEE3DB;
   border-radius: 1rem;
