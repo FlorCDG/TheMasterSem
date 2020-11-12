@@ -108,7 +108,7 @@ a:hover {
   height:50vh;
   background-color:#1D3461;
   opacity:85%;
-  padding-top:10vh; 
+  padding-top:15vh; 
 }
 
 .div__bajada--intro {
@@ -117,27 +117,30 @@ a:hover {
   padding-top: 20vh; 
 }
 
+
 .textobienvenida {
   font-size: 2rem;
   color:#1D3461;
   font-weight:500px;
 }
 
+
 .texto-superpuesto {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80%;
-  padding: 1rem 2rem 1rem 2rem;
-  background-color: #BEE3DB;
-  border-radius: 1rem;
-  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   animation-name: index-bajada;
   animation-duration: 1s; 
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  padding: 20px 30px 20px 30px;
+  margin:10px;
+  background-color: #BEE3DB;
+  border-radius: 1rem;
+  text-align: center;
 }
 
 @keyframes index-bajada {
@@ -151,7 +154,7 @@ a:hover {
 .index__div__h1-estilos {
   color: #1D3461;
   font-weight: bold;
-  font-size: 4rem; 
+  font-size: 2.2rem; 
 }
 
 .div__bajada--font-size {
@@ -159,25 +162,28 @@ a:hover {
 }
 
 .div--contenedor-h2 {
-  z-index: 50;
-  position: relative;
   display: flex;
-  justify-content: center; 
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  justify-content: space-around; 
 }
 
 .div__h2-fondo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;  
+  position: relative;
   background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
   border-radius: 30px;
   height: 100px;
   position: absolute;
   top: -60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;  
+  text-align: center;
 }
-
 .media__div__h2{
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 
@@ -208,8 +214,8 @@ a:hover {
 
 .container-fluid{
  padding: 0px
-
 }
+
 footer {
   height:25vh;
   background-image:linear-gradient(to right, #434343 0%, black 100%);
@@ -374,83 +380,75 @@ div.FondoNosotros{
   margin: 20px;
 }
 
-
+}
 /*PORTFOLIO*/
-section {
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-content: center;
-  padding: 15px;
-  margin-left: 10px;
-  margin-right: 10px;
+ #portfolio{
+    width: 100%;
+    justify-content: center;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
 }
 
-img.zoom1:hover{
-  transform: translate(15vh) scale(2);
-  transition: transform 1s;
-  position: relative; 
-  padding-top: 50px;
-  padding-left:50px;
+.show {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 60vw;
+    max-height: 100%;
+    filter: alpha(Opacity=100);
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    -ms-opacity: 1;
+    -o-opacity: 1;
+    opacity: 1;
+}
+img{
+  margin: 10px;
   margin: 10px;
   z-index: 1;
 }
 
-img.zoom2:hover{
-  transform: translate(15vh) scale(2);
-  transition: transform 1s;
-  position: relative; 
-  padding-top: 50px;
-  padding-left:10px;
-  padding-right: 10px;
-  margin: 10px;
-  z-index: 1;
-}
-
-img.zoom3:hover{
-  transform: translate(15vh) scale(2);
-  transition: transform 1s;
-  position: relative; 
-  padding-top: 50px;
-  padding-right:100px;
-  margin: 10px;
-  z-index: 1;
+.hide {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 000%;
+    max-height: 000%;
+    filter: alpha(Opacity=000);
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    -ms-opacity: 0;
+    -o-opacity: 0;
+    opacity: 0;
 }
 
 
 /*TESTIMONIOS*/
 
-.TituloSocios{
-  display: flex;
-  flex-direction: columns;
-  padding: 10px;
-  margin-left: 50px;
-  font-size: 2.5rem;
-  color:white;
+#cliente{
+  background-color: #83c5be;
+  margin: 10px;
+  padding: 15px;
+}
+
+#tituloscards{
+  margin-top: 10px;
+  font-size: 2rem;
   font-weight: bold;
 }
 
-.SubtituloSocios{
-  display: flex;
-  flex-direction: columns;
-  padding: 10px;
-  margin-left: 50px;
-  font-size: 2rem;
-  color:white;
-}
-.clientes img{
-  display: flex;
-  flex-direction: column;
-  border-radius: 50%;
-  padding: 10px;
-  margin:10px;
-  height: 300px;
-}
-
-.FondoTestimonios{
-  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
-  padding:30px;
-  margin: 20px;
+.card-text{
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 
